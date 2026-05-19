@@ -12,7 +12,7 @@ export default function GlobalFootprint() {
   const hub = locations.find(l => l.name === 'Riyadh');
 
   return (
-    <section className="py-40 bg-deep-black text-white overflow-hidden relative">
+    <section className="py-40 bg-deep-black text-white overflow-hidden relative" id="global-presence">
       <div className="container max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-20">
 

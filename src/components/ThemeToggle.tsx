@@ -3,10 +3,13 @@ import { useEffect, useState } from 'react';
 import { motion } from 'motion/react';
 
 export default function ThemeToggle() {
-  const [isDark, setIsDark] = useState(true);
+  // Default = Light Mode
+  const [isDark, setIsDark] = useState(false);
 
+  // Apply theme to HTML root
   useEffect(() => {
     const root = window.document.documentElement;
+
     if (isDark) {
       root.classList.add('dark');
     } else {
@@ -14,15 +17,24 @@ export default function ThemeToggle() {
     }
   }, [isDark]);
 
+  // Toggle theme
+  const toggleTheme = () => {
+    setIsDark((prev) => !prev);
+  };
+
   return (
     <motion.button
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.9 }}
-      onClick={() => setIsDark(!isDark)}
-      className="p-2 rounded-full glass cursor-pointer"
+      onClick={toggleTheme}
+      className="p-2 rounded-full glass cursor-pointer transition-all duration-300"
       aria-label="Toggle theme"
     >
-      {isDark ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-deep-navy-text" />}
+      {isDark ? (
+        <Sun className="w-5 h-5 text-yellow-400" />
+      ) : (
+        <Moon className="w-5 h-5 text-deep-navy-text dark:text-white" />
+      )}
     </motion.button>
   );
 }

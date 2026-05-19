@@ -38,19 +38,19 @@ export default function Footer() {
                 Solutions
               </div>
               <div className="flex flex-col gap-4 text-sm font-medium">
-                <a href="#" className="opacity-60 hover:opacity-100 transition-all">
+                <a href="#cybersecurity" className="opacity-60 hover:opacity-100 transition-all">
                   Cybersecurity & SOC
                 </a>
-                <a href="#" className="opacity-60 hover:opacity-100 transition-all">
+                <a href="#solutions" className="opacity-60 hover:opacity-100 transition-all">
                   AI Solutions
                 </a>
-                <a href="#" className="opacity-60 hover:opacity-100 transition-all">
+                <a href="#compliance" className="opacity-60 hover:opacity-100 transition-all">
                   GRC & Compliance
                 </a>
-                <a href="#" className="opacity-60 hover:opacity-100 transition-all">
+                <a href="#services" className="opacity-60 hover:opacity-100 transition-all">
                   CloudCore & IT Operations 
                 </a>
-                <a href="#" className="opacity-60 hover:opacity-100 transition-all">
+                <a href="#bcm" className="opacity-60 hover:opacity-100 transition-all">
                   BCM & DR  
                 </a>
               </div>
@@ -61,19 +61,19 @@ export default function Footer() {
                 Company
               </div>
               <div className="flex flex-col gap-4 text-sm font-medium">
-                <a href="#" className="opacity-60 hover:opacity-100 transition-all">
+                <a href="#about" className="opacity-60 hover:opacity-100 transition-all">
                   Company Overview
                 </a>
-                <a href="#" className="opacity-60 hover:opacity-100 transition-all">
+                <a href="#global-presence" className="opacity-60 hover:opacity-100 transition-all">
                   Global Presence
                 </a>
-                <a href="#" className="opacity-60 hover:opacity-100 transition-all">
+                <a href="" className="opacity-60 hover:opacity-100 transition-all">
                   HQ Riyadh
                 </a>
-                <a href="#" className="opacity-60 hover:opacity-100 transition-all">
+                <a href="#contact" className="opacity-60 hover:opacity-100 transition-all">
                   Contact
                 </a>
-              </div>
+              </div> 
             </div>
 
             {/* Contact */}
@@ -109,13 +109,6 @@ export default function Footer() {
                   className="w-12 h-12 rounded-2xl glass flex items-center justify-center hover:bg-samurai-red hover:text-white transition-all border-white/5"
                 >
                   <Linkedin className="w-5 h-5" />
-                </a>
-
-                <a
-                  href="#"
-                  className="w-12 h-12 rounded-2xl glass flex items-center justify-center hover:bg-samurai-red hover:text-white transition-all border-white/5"
-                >
-                  <Twitter className="w-5 h-5" />
                 </a>
 
                
