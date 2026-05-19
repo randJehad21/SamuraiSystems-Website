@@ -147,13 +147,25 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <Magnetic>
-            <button className="btn-primary flex items-center justify-center gap-3 px-10 py-5 group">
+            <button
+              className="btn-primary flex items-center justify-center gap-3 px-10 py-5 group"
+              onClick={() =>
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+            >
               Book a Briefing
               <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
             </button>
           </Magnetic>
           <Magnetic>
-            <button className="btn-secondary px-10 py-5 border-white/20 text-white hover:bg-white/5 backdrop-blur-md uppercase tracking-widest text-xs font-bold" href="#solutions">
+            <button className="btn-secondary px-10 py-5 border-white/20 text-white hover:bg-white/5 backdrop-blur-md uppercase tracking-widest text-xs font-bold" onClick={() =>
+                document.getElementById("services")?.scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+              >
               Explore Solutions
             </button>
           </Magnetic>

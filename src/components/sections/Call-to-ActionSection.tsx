@@ -32,7 +32,13 @@ export default function FinalCTA() {
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-20">
             <Magnetic>
-              <button className="btn-primary flex items-center justify-center gap-4 px-12 py-6 text-lg group">
+              <button className="btn-primary flex items-center justify-center gap-4 px-12 py-6 text-lg group"
+              onClick={() =>
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+              >
                 Book a Briefing
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-3 transition-transform" />
               </button>

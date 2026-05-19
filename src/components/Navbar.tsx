@@ -93,9 +93,17 @@ export default function Navbar() {
         <div className="flex items-center gap-6">
           <ThemeToggle />
           <Magnetic>
-            <button className="hidden sm:block btn-primary text-xs uppercase tracking-widest font-bold py-2.5">
+            <button
+              onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+              className="hidden sm:block btn-primary text-xs uppercase tracking-widest font-bold py-2.5"
+            >
               Book a Briefing
             </button>
+
           </Magnetic>
         </div>
       </div>
