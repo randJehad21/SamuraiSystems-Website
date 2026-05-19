@@ -1,0 +1,8 @@
+{
+  "name": "Samurai Systems | Digital Resilience & AI",
+  "description": "Samurai Systems — an affiliate of Neusol — delivers enterprise-grade cybersecurity, AI solutions, digital transformation, and managed IT services from Riyadh, Saudi Arabia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
